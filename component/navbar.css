@@ -1,0 +1,31 @@
+.container-flex {
+  display: flex;
+  background: var(--nav-color);
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 1.5rem 0.5rem;
+}
+.container-flex .nav-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.container-flex .nav-item div {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.pointer-cursor {
+  cursor: pointer;
+}
+.nav-item--effect:hover {
+  color: rgba(104, 11, 11, 0.7);
+}
+@media screen and (max-width: 670px) {
+  .container-flex {
+    font-size: 1rem;
+  }
+}
