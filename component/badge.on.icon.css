@@ -1,0 +1,28 @@
+.badge-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.badge-icon > .icon-md {
+  font-size: 2rem;
+  color: blueviolet;
+}
+.badge-icon > .icon-lg {
+  font-size: 3rem;
+  color: rgb(57, 209, 57);
+}
+
+.badge-count--status {
+  position: absolute;
+  top: 8.64%;
+  right: -14.63%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--count-status);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.1rem #fff;
+  color: var(--modal-white);
+  font-size: 0.7rem;
+  min-width: 0.9rem;
+  text-align: center;
+}
