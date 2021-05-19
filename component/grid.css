@@ -1,0 +1,20 @@
+.grid-with-two-item {
+  display: grid;
+  background: var(--modal-white);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.grid-with-three-item {
+  display: grid;
+  background: var(--modal-white);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.grid-with-two-item div,
+.grid-with-three-item div {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.grid-padding--1rem {
+  padding: 1rem;
+}

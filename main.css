@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rajdhani:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+/* -------Grid sturcture Design------- */
+@import url("component/content-style.css");
+@import url("component/landingpage.css");
+@import url("component/nav-style.css");
+
+/* ----Component Design----- */
+@import url("component/avatar.css");
+@import url("component/alert.css");
+@import url("component/badge.on.avatar.css");
+@import url("component/badge.on.icon.css");
+@import url("component/button.css");
+@import url("component/cards.css");
+@import url("component/grid.css");
+@import url("component/input.css");
+@import url("component/list.css");
+@import url("component/modal.css");
+@import url("component/navbar.css");
+@import url("component/responsive.img.css");
+@import url("component/rating.css");
+@import url("component/toast.css");
+/* ------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*------------color-variable------------------ */
+:root {
+  --primary: #2bd0e3;
+  --second: #a4ebf3;
+  --third: #e4fbff;
+  --fourth: #157b86;
+  --codebg: #ebf1f7;
+  --fontcolor: black;
+  --modal-white: white;
+  --status-online: #90eea8;
+  --status-offline: gray;
+  --count-status: orangered;
+  --nav-color: rgb(238, 158, 11);
+  --color-orange: orange;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+.header {
+  grid-area: h;
+  background: var(--primary);
+  font-family: "Rajdhani", sans-serif;
+}
+
+.nav {
+  grid-area: n;
+  background-color: var(--second);
+}
+.content {
+  grid-area: c;
+  background: var(--third);
+}
+.footer {
+  grid-area: f;
+  background: var(--primary);
+}
+.fixed a {
+  text-decoration: none;
+  color: var(--fontcolor);
+  font-size: 1.25rem;
+}
+.fixed {
+  position: fixed;
+  bottom: 0.75rem;
+  right: 1rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 5px rgba(48, 48, 170, 0.2);
+}
+.fixed:hover {
+  box-shadow: 0 0 5px 5px rgba(48, 48, 170, 0.4);
+}
+/* --------Media Q small screen----------------- */
+@media screen and (max-width: 670px) {
+  .container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px auto auto;
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "n n n n n n n n n n n n"
+      "c c c c c c c c c c c c"
+      "f f f f f f f f f f f f";
+  }
+  .landing-page .heading-block .heading {
+    font-size: 5.75rem;
+  }
+  .landing-page .introduction {
+    padding: 0 1.5rem;
+  }
+  .landing-page .start-btn {
+    max-width: 10rem;
+    color: black;
+    font-weight: 400;
+  }
+  .component-item--code {
+    width: 100%;
+  }
+  .htmltext {
+    visibility: hidden;
+  }
+  .header {
+    height: 80px;
+  }
+  .header > .heading {
+    font-size: 2.25rem;
+    padding-left: 0.5rem;
+  }
+  .header > .header-logo {
+    font-size: 1rem;
+  }
+  .container > .header .version {
+    font-size: 1.125rem;
+  }
+  .header-logo .level-top {
+    padding: 0 0.5rem;
+  }
+  .header-logo .level-mid {
+    padding: 0 0.4rem;
+  }
+
+  .nav,
+  .content {
+    border-radius: 0;
+  }
+  .fixed a {
+    font-size: 1rem;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,27 @@
+.alert {
+  max-width: 50%;
+  min-width: 20rem;
+  margin: auto;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 1rem;
+  position: relative;
+  background: var(--modal-white);
+  box-shadow: 3px 3px 10px 3px rgba(14, 14, 95, 0.08);
+}
+.alert-hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.alert__remove--btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.alert__remove--btn:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
