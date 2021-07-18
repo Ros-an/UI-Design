@@ -69,6 +69,7 @@
 .element-prop1 {
   color: rgb(231, 26, 26);
 }
+
 /*----------------Badge-component--------------*/
 .content .component-item--list .badge-icon,
 .content .component-item--list .badge-avatar {
@@ -157,4 +158,13 @@ h6 {
 
 #component-toast .toast {
   margin: 1rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .content .component-item--list {
+    padding-left: 0;
+  }
+  .content {
+    padding: 5vw 0 1rem 0;
+  }
 }
