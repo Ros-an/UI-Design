@@ -38,38 +38,23 @@
 }
 
 .component-item--code {
-  background-color: var(--codebg);
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  width: 90%;
-  position: relative;
-  font-size: 1.05rem;
-  box-shadow: inset 0 0 10px var(--second);
-  border: 2px solid var(--second);
-  overflow-x: scroll;
+  overflow: scroll;
+  width: 100%;
+  height: 14rem;
+}
+.component-item--code::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
-.component-item--code > .htmltext {
-  position: absolute;
-  top: 0rem;
-  left: 1rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  font-family: initial;
-}
-.tag {
-  color: orangered;
+.component-item--code::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.classtext {
-  color: blue;
+.component-item--code::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 1.25rem;
 }
-.element-prop {
-  color: green;
-}
-.element-prop1 {
-  color: rgb(231, 26, 26);
-}
-
 /*----------------Badge-component--------------*/
 .content .component-item--list .badge-icon,
 .content .component-item--list .badge-avatar {
@@ -161,9 +146,6 @@ h6 {
 }
 
 @media screen and (max-width: 480px) {
-  .content .component-item--list {
-    padding-left: 0;
-  }
   .content {
     padding: 5vw 0 1rem 0;
   }
