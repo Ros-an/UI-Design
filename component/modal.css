@@ -1,0 +1,39 @@
+.modal {
+  max-width: 50%;
+  min-width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.225);
+  border-radius: 0.25rem;
+  background: var(--modal-white);
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+}
+.modal--icon {
+  color: rgba(0, 0, 0, 0.7);
+}
+.modal--icon:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.modal .modal--title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  align-content: center;
+}
+.modal .modal--title p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.modal .modal--body {
+  height: 85px;
+  font-size: 1rem;
+  color: black;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.modal .modal--footer {
+  text-align: right;
+  padding: 0.5rem 0.75rem;
+}

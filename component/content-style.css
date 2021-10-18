@@ -1,0 +1,152 @@
+.content {
+  padding: 5vw 1rem 1rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.content > .component-item {
+  margin-bottom: 5vw;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+  box-shadow: 0 6px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.content > .component-item > h2 {
+  margin-left: 1rem;
+  font-size: 1.75rem;
+}
+
+.content > .component-item h2,
+.content > .component-item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* --------code section----------- */
+
+.component-item .component-item__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.component-item--avatar img {
+  margin: 0.5rem 2rem 1rem 0;
+}
+.block {
+  margin: 1rem 0 1rem 0;
+}
+
+.component-item--code {
+  overflow: scroll;
+  width: 100%;
+  height: 14rem;
+}
+.component-item--code::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.component-item--code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.component-item--code::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 1.25rem;
+}
+/*----------------Badge-component--------------*/
+.content .component-item--list .badge-icon,
+.content .component-item--list .badge-avatar {
+  margin-right: 10px;
+}
+
+/* ----------------Button-component--------------- */
+
+.content .btn__block {
+  padding: 1rem;
+}
+
+.content .btn__block button {
+  margin: 0.25rem;
+}
+
+.content .float-btn {
+  height: 200px;
+  max-width: 200px;
+  background-color: var(--codebg);
+  position: relative;
+  box-shadow: inset 0 0 10px var(--second);
+}
+
+/* -----------  Cards  -------------- */
+.card .card-content h4,
+.card .card-content p {
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.cards-block .card {
+  margin-bottom: 1rem;
+}
+
+.component-item .card-panel {
+  margin-bottom: 1rem;
+}
+
+/* ----------round image ------------ */
+
+.component-item .round-img-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* -----------list ------------ */
+
+.normal-list .list-group,
+.normal-list .notification-lst-group {
+  margin: auto;
+}
+.modal {
+  margin: auto;
+}
+/* -------------star-rating------------------ */
+
+.component-item--star {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------heading------------------- */
+#component-text li {
+  margin-bottom: 10vh;
+}
+
+.component-item--graytxt p {
+  color: gray;
+}
+.txt-center {
+  text-align: center;
+}
+.component-item--headings h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* --------component-toast--------- */
+
+#component-toast .toast {
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 5vw 0 1rem 0;
+  }
+}

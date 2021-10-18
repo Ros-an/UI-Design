@@ -1,0 +1,25 @@
+.avatar-xl {
+  width: 4rem;
+}
+
+.avatar-lg {
+  width: 3rem;
+}
+
+.avatar-default {
+  width: 2rem;
+}
+.avatar-sm {
+  width: 1.5rem;
+}
+.avatar-xs {
+  width: 1rem;
+}
+.avatar-xl,
+.avatar-lg,
+.avatar-default,
+.avatar-sm,
+.avatar-xs {
+  border-radius: 50%;
+  vertical-align: middle;
+}

@@ -1,0 +1,84 @@
+.list-group {
+  max-width: 25rem;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: var(--modal-white);
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: var(--modal-white);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* -------Notification list -------- */
+
+.notification-lst-group {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.notification-lst-group-item {
+  position: relative;
+  display: block;
+  padding: 1rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: var(--modal-white);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.notification-lst-group-item h4,
+.notification-lst-group-item p {
+  margin: 0;
+}
+.notification-lst-group-item h4 {
+  margin-bottom: 0.5rem;
+}
+
+.notification-lst-group-item:first-child {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.notification-lst-group-item:last-child {
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.notification-lst-group-item p {
+  font-size: 0.9rem;
+}
+
+.notification-icon {
+  position: absolute;
+  color: rgba(131, 33, 33, 0.7);
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.time-of-notification {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}

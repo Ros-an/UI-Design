@@ -1,0 +1,27 @@
+.badge-avatar {
+  display: inline-block;
+  position: relative;
+}
+.badge-avatar--status {
+  position: absolute;
+  right: 14.64%;
+  bottom: 14.64%;
+  transform: translate(50%, 50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.15rem #fff;
+}
+
+.badge-avatar > .online {
+  background: var(--status-online);
+}
+
+.badge-avatar > .offline {
+  background: var(--status-offline);
+}
+
+.badge-avatar > .avatar-default + .badge-avatar--status {
+  width: 0.5rem;
+  height: 0.5rem;
+}
